@@ -19,7 +19,7 @@ class CppCommon(ConanFile):
     default_options = {"fPIC": True,
                        "shared": False}
     requires = ["fmt/7.0.3"]
-    generators = "cmake", "visual_studio"
+    generators = "cmake"
     exports_sources = ["../**"]
     _cmake = None
 
@@ -46,7 +46,6 @@ class CppCommon(ConanFile):
         shutil.move("CMakeLists.txt", dst=self._source_subfolder)
         shutil.move("conan/patches", dst=".")
         shutil.move("conan/CMakeLists.txt", dst=".")
-        self.output.warn(os.getcwd())
 
     def config_options(self):
         if self.settings.os == "Windows":
