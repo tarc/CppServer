@@ -1,0 +1,3 @@
+[settings]
+arch=x86
+compiler.exception=dwarf2

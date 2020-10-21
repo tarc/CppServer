@@ -1,0 +1,12 @@
+[settings]
+os=Windows
+os_build=Windows
+compiler=gcc
+compiler.version=7
+compiler.libcxx=libstdc++11
+compiler.threads=posix
+[options]
+[build_requires]
+mingw_installer/1.0@conan/stable
+msys2/20190524
+[env]

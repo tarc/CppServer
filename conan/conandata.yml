@@ -1,0 +1,12 @@
+patches:
+  "1.0.0.0":
+    "local":
+      - patch_file: "patches/00001-update-cmakelists.patch"
+        base_path: ".."
+      - patch_file: "patches/00002-disable-asio-separate-compilation.patch"
+        base_path: ".."
+    "package":
+      - patch_file: "patches/00001-update-cmakelists.patch"
+        base_path: "source_subfolder"
+      - patch_file: "patches/00002-disable-asio-separate-compilation.patch"
+        base_path: "source_subfolder"
